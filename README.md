@@ -3,7 +3,7 @@
 # QBCore entegre etme
 1. qb-core/client/functions.lua'a giriyosunuz.
 2. QBCore.Functions.Notify'i buluyorsunuz.
-3. function QBCore.Functions.Notify(text, texttype, length)
+3. `function QBCore.Functions.Notify(text, texttype, length)
     if texttype == nil then
         texttype = "success"
     end
@@ -11,7 +11,7 @@
         length = 7500
     end
     TriggerEvent('yNotification:send', {type = texttype, text = text, length = length})
-end
+end`
 
 ile değiştiriyosunuz.
 
