@@ -1,0 +1,46 @@
+@import"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap";
+
+
+body {
+    background-color: transparent !important;
+}
+.notification,
+.template {
+    display: none;
+}
+.notif-container {
+    width: fit-content;
+    max-width: 70%;
+    height: 50%;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+.notification {
+    padding: 10px 14px 10px 12px;
+    width: fit-content;
+    -webkit-border-radius: 4px; /*chrome için*/
+	-moz-border-radius: 4px; /*mozilla için*/
+	border-radius: 4px; /*ie için ve genel*/
+    height: 15px;
+    margin: 6px;
+    font: caption;
+    font-size: 12.5px;
+    font-family:Roboto,sans-serif;
+    font-weight: 600;
+    box-shadow:0 4px 15px -5px #000c;
+    float: left;
+}
+
+.success {
+    background: linear-gradient(135deg, #253d28, #1a1c1e);
+    color: #fff;
+}
+.inform {
+    background: linear-gradient(135deg, #252a34, #1a1c1e);
+    color: #fff;
+}
+.error {
+    background: linear-gradient(135deg, #482329, #1a1c1e);
+    color: #fff;
+}
