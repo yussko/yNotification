@@ -6,7 +6,7 @@ RegisterCommand('notify', function()
     SendNUIMessage({type = "inform", length = 5000, text = "Lorem Ipsum is simply dummy text"})
 end)
 
-RegisterNetEvent('yNotify:send', function(data)
+RegisterNetEvent('yNotification:send', function(data)
     notifId = notifId + 1
     SendNUIMessage({type = data.type, length = data.length, text = data.text, id = notifId})
 end)
